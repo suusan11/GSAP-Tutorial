@@ -1,10 +1,10 @@
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  adding: 9em;
+  padding: 9em;
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 4em;
   width: 25%;
   color: red;
   line-height: 1em;
@@ -29,18 +29,25 @@ button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15% 7%;
-  height: 100vh;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
 }
 
 .panel img {
   width: 120px;
   float: left;
   margin-right: 50px;
+  opacity: 0;
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px);
 }
 
 .panel p {
   font-size: 1.9em;
-  width: 80%;
+  width: 100%;
+  opacity: 0;
 }
 
 .panel .box {
@@ -50,5 +57,9 @@ button {
   position: absolute;
   left: -7%;
   top: 15%;
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  z-index: -1;
 }
 /*# sourceMappingURL=main.css.map */
